@@ -3,22 +3,41 @@ import { renderWithTheme } from "../../testHelpers";
 import Switch from "../../components/Switch/Switch";
 
 it("renders correctly", () => {
-  const { asFragment } = renderWithTheme(<Switch checked={false} />);
+  const { asFragment } = renderWithTheme(<Switch checked={false} labels={["1", "2"]} />);
   expect(asFragment()).toMatchInlineSnapshot(`
     <DocumentFragment>
       <div
-        class="css-1g78am3"
+        class="css-l4yzaa-Switch css-vurnku"
       >
-        <button
-          class="css-1qanie7"
+        <div
+          class="css-1aawmn0-Switch css-vurnku"
         >
-          Switch
-        </button>
-        <button
-          class="css-1lywym5"
+          <span
+            class="css-1w070cj"
+          >
+            1
+          </span>
+        </div>
+        <div
+          class="css-1aawmn0-Switch css-vurnku"
         >
-          Switch
+          <span
+            class="css-1w070cj"
+          >
+            2
+          </span>
+        </div>
+        <button
+          class="css-18fdx7q"
+        >
+          1
         </button>
+        <input
+          aria-hidden="true"
+          class="css-1k7e3dq-Switch"
+          tabindex="-1"
+          type="checkbox"
+        />
       </div>
     </DocumentFragment>
   `);

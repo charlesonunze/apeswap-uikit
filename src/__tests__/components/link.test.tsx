@@ -29,9 +29,8 @@ it("renders link external link correctly", () => {
           class="css-w4f2ye"
         >
           <svg
-            class="css-yc605n-External"
+            class="css-1l002ma-External"
             fill="none"
-            height="auto"
             viewBox="0 0 11 12"
             width="11"
             xmlns="http://www.w3.org/2000/svg"

@@ -12,6 +12,7 @@ const buttonBaseStyles = {
 
 const Apeswap: Theme = {
   ...baseTheme,
+  breakpoints: ["576px", "852px", "968px"],
   colors: Colors,
   text: {
     heading: {
@@ -84,6 +85,26 @@ const Apeswap: Theme = {
     },
   },
   forms: {
+    input: {
+      sm: {
+        background: "white3",
+        borderRadius: 10,
+        height: "32px",
+        width: "200px",
+      },
+      md: {
+        background: "white3",
+        borderRadius: 10,
+        height: "36px",
+        width: "200px",
+      },
+      lg: {
+        background: "white3",
+        borderRadius: 14,
+        height: "48px",
+        width: "200px",
+      },
+    },
     textarea: {
       padding: "10px 13px 10px 10px",
       borderRadius: "normal",
@@ -221,6 +242,17 @@ const Apeswap: Theme = {
         border: "secondaryButtonDisable",
         color: "secondaryButtonDisableColor",
       },
+    },
+    circular: {
+      width: "40px",
+      height: "40px",
+      background: "white3",
+      borderRadius: "50%",
+      display: "flex",
+      justifyContent: "center",
+      alignItems: "center",
+      overflow: "hidden",
+      cursor: "pointer",
     },
   },
   cards: {

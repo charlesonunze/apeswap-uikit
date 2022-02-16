@@ -1,5 +1,8 @@
+import { colorProps } from "../../theme/Apeswap/types";
+
 export interface ProgressProps {
-  primaryStep?: number;
-  secondaryStep?: number;
-  showProgressBunny?: boolean;
+  height?: string | number;
+  to?: number;
+  color?: colorProps;
+  background?: colorProps;
 }
