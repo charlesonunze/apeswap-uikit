@@ -1,5 +1,5 @@
 {
-  "name": "@apeswapfinance/uikit",
+  "name": "@charlesonunze/uikit",
   "version": "0.10.5-3.8",
   "description": "Set of UI components for apeswap projects",
   "main": "dist/index.cjs.js",
@@ -11,7 +11,7 @@
   "files": [
     "dist"
   ],
-  "repository": "https://github.com/ApeSwapFinance/apeswap-uikit",
+  "repository": "https://github.com/charlesonunze/apeswap-uikit",
   "license": "MIT",
   "scripts": {
     "build": "rm -rf ./dist && rollup -c && tsc -d --emitDeclarationOnly --declarationDir dist",
@@ -20,7 +20,10 @@
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
     "test": "jest",
-    "release": "yarn build && np"
+    "release": "yarn build && np --branch milestone-2-main"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org"
   },
   "husky": {
     "hooks": {
